@@ -1,0 +1,62 @@
+h1{
+color :  steelblue ;
+font-size : 5ex ;
+text-align: center;
+}
+
+h2{
+color : darkorange ;
+font-size : 3ex;
+}
+
+h3{
+color : red ;
+font-size : 2ex ;
+}
+/**********/
+.header-image {
+     -webkit-transform: translate3d(0, 0, 0) !important;
+     -o-transform: translate3d(0, 0, 0) !important;
+     -ms-transform: translate3d(0, 0, 0) !important;
+     -moz-transform: translate3d(0, 0, 0) !important;
+     transform: translate3d(0, 0, 0) !important
+ }
+ .header-image.cover img {
+     display: none
+ }
+/**********
+
+td{background-color : khaki;}
+th{background-color : goldenrod;}
+
+body{
+background-image : url(include/fond-cv1.png);
+padding-left : 16em;
+padding-top : 6em;
+padding-bottom : 4em;
+
+}
+.infoPerso{
+font-style : italic ;
+color : darkgray ;
+}
+
+a{
+text-decoration : none;
+color : blue ;
+}
+
+a:hover{
+color : brown ;
+}
+
+li{
+display : list-item;
+list-style-image :url(http://www.dogtrainer.fr/pages/tournee/images/puce.png) ;
+
+}
+
+.tableauEntreprises{
+text-align : center ;
+width : 60% ;
+}
