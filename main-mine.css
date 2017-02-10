@@ -37,7 +37,7 @@ a:active, a:hover {
 
 h1 {
     font-size: 2em;
-    margin: .67em 0
+    margin: .67em 0;
 }
 
 h2 {
@@ -901,20 +901,20 @@ body:not(.touch) .selector:hover:not(.active) .bar-icon:nth-child(3) {
 }
 
 .blog-title-wrapper {
-    text-align: center
+    text-align: center;
 }
 
 .blog-title {
     font-size: 56px;
     line-height: 1.2;
     margin: 40px 0 0;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
 .blog-title a {
     color: #444;
     display: block;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .blog-title a:active {
@@ -2433,7 +2433,7 @@ figure.photoset {
     }
 
     .blog-title {
-        font-size: 54px
+        font-size: 54px;
     }
 }
 
@@ -2500,7 +2500,7 @@ figure.photoset {
 
     .blog-title {
         font-size: 30px;
-        margin-top: 30px
+        margin-top: 30px;
     }
 
     .avatar-hidden .blog-title {
