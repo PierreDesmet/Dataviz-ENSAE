@@ -15,6 +15,8 @@
         <link rel="apple-touch-icon-precomposed" href="http://img11.hostingpics.net/pics/999138ensae.png">
         <!--<link rel="alternate" type="application/rss+xml" href="http://tournageparis.tumblr.com/rss">-->
         <link rel="stylesheet" href="https://pierredesmet.github.io/main-min.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 
         <!-- HTML5 Shiv -->
         <!--[if lt IE 9]>
@@ -47,6 +49,8 @@
             a {
                 color: #c27a25;
             }
+
+            #mapid { height: 180px; } <!-- Leaflet-->
 
             #pagination a,
             .exposed-nav-wrapper li a {
@@ -335,7 +339,6 @@
 
                     <div class="header-image-wrapper ">
                         <a href="/" class="header-image parallax cover  loaded" data-bg-image="http://leossf.com/wp-content/uploads/2015/11/leos-oyster-bar-home-slide-03.jpg"></a>
-                        
                         <div class="loader-bg"></div>
                     </div>
 
@@ -591,7 +594,7 @@
                                             <h2 class="title"><a href="">Notre quatrième graphique</a></h2>
                                             <div class="body-text">
                                               <!--<img src = "boxplot.png"/>-->
-                                              <iframe width="700" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~Chienard/6.embed"></iframe>
+                                              <iframe width="700" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~Chienard/14.embed"></iframe>
 
                                               Some other text right here.
                                                 </div>
@@ -642,7 +645,70 @@
 
 
 
+                            <article class="text not-page post-113991096584 " data-post-id="post_113991096584">
+                                <div class="post-wrapper clearfix">
+                                    <section class="post">
+                                        <div class="post-content">
+                                            <h2 class="title"><a href="">Notre cinquième graphique</a></h2>
+                                            <div class="body-text">
+                                              <!--<img src = "boxplot.png"/>-->
+                                              <div id="mapid" style="width: 600px; height: 400px;"></div>
+                                              <script>
+                                              	var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+                                              	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                                              		maxZoom: 18,
+                                              		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+                                              			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                                              			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                                              		id: 'mapbox.streets'
+                                              	}).addTo(mymap);
+                                              </script>
 
+
+                                              Some other text right here.
+                                                </div>
+                                        </div>
+                                        <section class="inline-meta post-extra"></section>
+                                    </section>
+
+
+                                    <section class="panel">
+                                        <footer class="post-footer">
+                                            <section class="inline-meta date-notes">
+                                                <div class="date-note-wrapper">
+
+                                                        <a href="/" class="meta-item post-notes">1 note</a>
+
+                                                    <a href="/" title="1 year ago" class="meta-item post-date">Mar 17th, 2015</a>
+                                                </div>
+                                            </section>
+
+                                            <section class="post-controls">
+                                                <div class="controls-wrapper">
+                                                    <div class="control share-control">
+                                                        <nav class="pop">
+                                                            <a href="#" class="share selector icon-export"></a>
+                                                            <div class="pop-menu share-menu south" id="share_113991096584">
+                                                                <ul>
+                                                                    <li class="open-in-app"><a href="#" class="share-item open-in-app" data-post="113991096584">Open in app</a></li>
+                                                                    <!-- TODO <li><a href="http://facebook.com/sharer.php?u=http%3A%2F%2Ftournageparis.tumblr.com%2Fpost%2F113991096584%2Fon-ne-tourne-pas-que-dans-les-quartiers-chics-%C3%A0&amp;t=On%20ne%20tourne%20pas%20que%20dans%20les%20quartiers%20chics%20%26agrave%3B%20Paris%20%21" class="share-item facebook" target="_blank">Facebook</a></li>-->
+                                                                    <li><a href="https://twitter.com/intent/tweet?text=On%20ne%20tourne%20pas%20que%20dans%20les%20quartiers%20chics%20%C3%A0%20Paris%20%21%20-%20Le%20top%203%20des%20arrondissements%20o%C3%B9%20le%20plus%20de...%20https%3A%2F%2Ftmblr.co%2FZSA92l1gAPXa8" class="share-item twitter" target="_blank">Tweet</a></li>
+
+
+                                                                    <li><a href="mailto:?subject=A%20post%20from%20Les%20tournages%20%26agrave%3B%20Paris&amp;body=On%20ne%20tourne%20pas%20que%20dans%20les%20quartiers%20chics%20%C3%A0%20Paris%20%21%20-%20Le%20top%203%20des%20arrondissements%20o%C3%B9%20le%20plus%20de%20sc%C3%A8nes%20ont%20%C3%A9t%C3%A9%20tourn%C3%A9es%20est%20relativement%20surprenant%2C...%20http%3A%2F%2Ftournageparis.tumblr.com%2Fpost%2F113991096584%2Fon-ne-tourne-pas-que-dans-les-quartiers-chics-%C3%A0" class="share-item mail">Mail</a></li>
+                                                                    <li><a href="http://tournageparis.tumblr.com/post/113991096584/on-ne-tourne-pas-que-dans-les-quartiers-chics-à" class="share-item permalink">Permalink <i class="icon-arrow_carrot_right"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                    </div>
+                                                    <div class="control reblog-control"><a href="https://www.tumblr.com/reblog/113991096584/z4M6NkEl" class="reblog_button" style="display: block;width:21px;height:21px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></div>
+                                                    <div class="control like-control"><div class="like_button" data-post-id="113991096584" data-blog-name="tournageparis" id="like_button_113991096584"><iframe id="like_iframe_113991096584" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=399aee1ea58b6007c2190a8138f100e5#name=tournageparis&amp;post_id=113991096584&amp;color=black&amp;rk=z4M6NkEl" scrolling="no" width="20" height="20" frameborder="0" class="like_toggle" allowtransparency="true" name="like_iframe_113991096584" style="width: 100%; height: 20px;"></iframe></div></div>
+                                                </div>
+                                            </section>
+                                        </footer>
+                                    </section>
+                              </div>
+                            </article>
 
 
                 </div>
